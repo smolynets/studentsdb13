@@ -1,0 +1,99 @@
+{% extends "students/base.html" %}
+{% load i18n %}
+{% load static from staticfiles %}
+{% block meta_title %}{% trans "students" %}{% endblock meta_title %}
+{% block title %}{% trans "groups" %}{% endblock title %}
+{% block content %}
+
+<!--start main page-->
+         <div class="row" id="content-columns">
+          <div class="col-xs-12" id="content-column">
+             <!--add student button-->
+             {% if user.is_authenticated %}
+             <a class="btn btn-primary" href="{% url "groups_add" %}" role="button" id="edd">{% trans "add group" %}</a>
+             {% endif %}
+         </div>
+         </div>
+         <!--start table of students-->
+        <table class="table">
+
+{% with order_by=request.GET.order_by reverse=request.GET.reverse %}
+<thead>
+<tr>
+<th>
+<a href="{% url "groups" %}?order_by=#{% if order_by == '#' and reverse != '1' %}&amp;reverse=1{% endif %}">
+#
+{% if order_by == '#' and reverse != '1' %}&uarr;
+{% elif order_by == '#' and reverse == '1' %}&darr;
+{% endif %}
+</a>
+</th>
+<th>
+<a href="{% url "groups" %}?order_by=group_name{% if order_by == 'group_name' and reverse != '1' %}&amp;reverse=1{% endif %}">
+{% trans "group" %}
+{% if order_by == 'group_name' and reverse != '1' %}&uarr;
+{% elif order_by == 'group_name' and reverse == '1' %}&darr;
+{% endif %}
+</a>
+</th>
+<th>
+<a href="{% url "groups" %}?order_by=leader{% if order_by == 'leader' and reverse != '1' %}&amp;reverse=1{% endif %}">
+{% trans "leader" %}
+{% if order_by == 'leader' and reverse != '1' %}&uarr;
+{% elif order_by == 'leader' and reverse == '1' %}&darr;
+{% endif %}
+</a>
+{% if user.is_authenticated %}
+</th>
+<th>{% trans "actions" %}</th>
+{% endif %}
+</tr>
+</thead>
+{% endwith %}
+
+<tbody>
+{% for group in groups %}
+<tr>
+<td><a href="{% url "groups_one" group.id %}">{{ forloop.counter }}</td>
+<td><a href="{% url "groups_one" group.id %}">{{ group.title }}</td>
+<td><a href="{% url "groups_one" group.id %}">{{ group.leader }}</td>
+{% if user.is_authenticated %}
+<td>
+<div class="btn-group">
+<button type="button" class="btn btn-default dropdown-toggle"
+data-toggle="dropdown">{% trans "action" %}
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu" role="menu">
+<li><a href="{% url "groups_edit" group.id %}">{% trans "edit" %}</a></li>
+<li><a href="vid{{ student.id }}">{% trans "visiting" %}</a></li>
+<li><a href="{% url "groups_delete" group.id %}">{% trans "delete" %}</a></li>
+</ul>
+</div>
+</td>
+{% endif %}
+{% endfor %}
+</tbody>
+</table>
+         {% if groups.has_other_pages %}
+{% with order_by=request.GET.order_by reverse=request.GET.reverse %}
+<nav>
+<ul class="pagination">
+<li>
+<a href="{% url "groups" %}?page=1&amp;order_by={{ order_by }}&amp;reverse={{ reverse }}">&laquo;</a>
+</li>
+{% for p in groups.paginator.page_range %}
+<li {% if groups.number == p %}class="active"{% endif %}>
+<a href="{% url "groups" %}?page={{ p }}&amp;order_by={{ order_by }}&amp;reverse={{ reverse }}">{{ p }}</a>
+</li>
+{% endfor %}
+<li>
+<a href="{% url "groups" %}?page={{ groups.paginator.num_pages}}&amp;order_by={{ order_by }}&amp;reverse={{ reverse }}">
+&raquo;</a>
+</li>
+</ul>
+</nav>
+{% endwith %}
+{% endif %}
+
+{% endblock content %}

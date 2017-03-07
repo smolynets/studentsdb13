@@ -1,0 +1,586 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-06 12:59+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: apps.py:8
+msgid "Students base"
+msgstr ""
+
+#: correct_admin.py:19
+msgid "Student is leader of other group."
+msgstr ""
+
+#: management/commands/stcount.py:15
+#, python-format
+msgid "Number of students in database: %d"
+msgstr ""
+
+#: management/commands/stcount.py:18
+#, python-format
+msgid "Number of groups in database: %d"
+msgstr ""
+
+#: management/commands/stcount.py:21
+#, python-format
+msgid "Number of exams in database: %d"
+msgstr ""
+
+#: models/exam.py:6
+msgid "Exam"
+msgstr ""
+
+#: models/exam.py:7
+msgid "Exams"
+msgstr ""
+
+#: models/exam.py:11 models/group.py:11 templates/students/exams.html:26
+msgid "name"
+msgstr ""
+
+#: models/exam.py:13
+msgid "Group"
+msgstr ""
+
+#: models/exam.py:19
+msgid "dates"
+msgstr ""
+
+#: models/group.py:6 models/student.py:35 templates/students/base.html:42
+#: templates/students/exams.html:34 templates/students/groups_one.html:40
+#: templates/students/groups_one_null.html:5 templates/students/grup.html:33
+#: templates/students/stud.html:44
+#: templates/students/students_add_edit.html:113
+msgid "group"
+msgstr ""
+
+#: models/group.py:7 templates/students/base.html:75
+#: templates/students/grup.html:5
+msgid "groups"
+msgstr ""
+
+#: models/group.py:13 templates/students/groups_add_edit.html:43
+#: templates/students/grup.html:41
+msgid "leader"
+msgstr ""
+
+#: models/group.py:19 models/student.py:41
+msgid "Additional notes"
+msgstr ""
+
+#: models/monthjournal.py:6
+msgid "Monthly journal"
+msgstr ""
+
+#: models/monthjournal.py:7
+msgid "Monthly journals"
+msgstr ""
+
+#: models/monthjournal.py:10 models/student.py:7
+msgid "Student"
+msgstr ""
+
+#: models/monthjournal.py:14
+msgid "Date"
+msgstr ""
+
+#: models/student.py:8 templates/students/base.html:73
+msgid "Students"
+msgstr ""
+
+#: models/student.py:12 templates/students/stud.html:37
+msgid "first_name"
+msgstr ""
+
+#: models/student.py:16
+msgid "last_name"
+msgstr ""
+
+#: models/student.py:20 templates/students/students_add_edit.html:58
+msgid "surname"
+msgstr ""
+
+#: models/student.py:24 templates/students/students_add_edit.html:70
+msgid "birthday"
+msgstr ""
+
+#: models/student.py:28 templates/students/stud.html:26
+#: templates/students/students_add_edit.html:83
+msgid "photo"
+msgstr ""
+
+#: models/student.py:33 templates/students/students_add_edit.html:101
+msgid "ticket"
+msgstr ""
+
+#: templates/students/base.html:7 templates/students/base.html.py:65
+#: templates/students/base.html:106
+msgid "Students acounting service"
+msgstr ""
+
+#: templates/students/base.html:8
+msgid "Students acounting service of school"
+msgstr ""
+
+#: templates/students/base.html:39
+msgid "Logout"
+msgstr ""
+
+#: templates/students/base.html:44
+msgid "all students"
+msgstr ""
+
+#: templates/students/base.html:55
+msgid "Facebook"
+msgstr ""
+
+#: templates/students/base.html:57
+msgid "Login"
+msgstr ""
+
+#: templates/students/base.html:58
+msgid "Register"
+msgstr ""
+
+#: templates/students/base.html:74 templates/students/groups_one.html:74
+#: templates/students/grup.html:69 templates/students/stud.html:81
+msgid "visiting"
+msgstr ""
+
+#: templates/students/base.html:76
+msgid "exams"
+msgstr ""
+
+#: templates/students/base.html:78
+msgid "to contact"
+msgstr ""
+
+#: templates/students/base.html:80
+msgid "log journal"
+msgstr ""
+
+#: templates/students/contact.html:5 templates/students/exams.html:4
+#: templates/students/groups_add.html:4
+#: templates/students/groups_add_edit.html:4
+#: templates/students/groups_delete.html:4
+#: templates/students/groups_one.html:4
+#: templates/students/groups_one_null.html:4 templates/students/grup.html:4
+#: templates/students/logs.html:4 templates/students/stud.html:4
+#: templates/students/students_add_edit.html:3
+#: templates/students/students_add_edit.html:7
+#: templates/students/students_delete.html:4
+msgid "students"
+msgstr ""
+
+#: templates/students/contact.html:6
+msgid "conection with administration of site"
+msgstr ""
+
+#: templates/students/contact.html:10 templates/students/groups_add.html:9
+#: templates/students/groups_add_edit.html:15
+msgid "Please, correct next errors!"
+msgstr ""
+
+#: templates/students/exams.html:5 templates/students/stud.html:5
+msgid "Base of students"
+msgstr ""
+
+#: templates/students/exams.html:8
+msgid "add exam"
+msgstr ""
+
+#: templates/students/exams.html:41
+msgid "date"
+msgstr ""
+
+#: templates/students/exams.html:47 templates/students/groups_one.html:45
+#: templates/students/grup.html:48 templates/students/stud.html:50
+msgid "actions"
+msgstr ""
+
+#: templates/students/exams.html:64 templates/students/groups_one.html:69
+#: templates/students/grup.html:64 templates/students/stud.html:76
+msgid "action"
+msgstr ""
+
+#: templates/students/exams.html:68 templates/students/groups_one.html:73
+#: templates/students/grup.html:68 templates/students/journal.html:52
+#: templates/students/stud.html:80
+msgid "edit"
+msgstr ""
+
+#: templates/students/exams.html:69 templates/students/groups_delete.html:21
+#: templates/students/groups_one.html:76 templates/students/grup.html:70
+#: templates/students/students_add_edit.html:88
+#: templates/students/students_delete.html:21
+msgid "delete"
+msgstr ""
+
+#: templates/students/groups_add.html:5
+#: templates/students/groups_add_edit.html:9
+msgid "adding group"
+msgstr ""
+
+#: templates/students/groups_add.html:18
+#: templates/students/groups_add_edit.html:30
+msgid "name of group"
+msgstr ""
+
+#: templates/students/groups_add.html:28
+#: templates/students/groups_add_edit.html:58
+msgid "additional notes"
+msgstr ""
+
+#: templates/students/groups_add.html:36
+#: templates/students/students_add_edit.html:154
+msgid "add"
+msgstr ""
+
+#: templates/students/groups_add.html:39
+#: templates/students/groups_add_edit.html:74
+#: templates/students/groups_add_edit.html:79
+#: templates/students/groups_delete.html:24
+#: templates/students/students_add_edit.html:152
+#: templates/students/students_add_edit.html:157
+#: templates/students/students_delete.html:24 view/exams.py:84
+#: view/exams.py:134 view/login.py:43
+msgid "cancel"
+msgstr ""
+
+#: templates/students/groups_add.html:43
+#: templates/students/groups_add_edit.html:84
+#: templates/students/students_add_edit.html:162
+msgid "Fields marked with an asterisk are obligatory for filling"
+msgstr ""
+
+#: templates/students/groups_add_edit.html:7
+msgid "editing group"
+msgstr ""
+
+#: templates/students/groups_add_edit.html:71 view/exams.py:83
+#: view/exams.py:133 view/login.py:42
+msgid "save"
+msgstr ""
+
+#: templates/students/groups_add_edit.html:85
+msgid ""
+"To make the head of the student must first add it to this group in the "
+"Changes students"
+msgstr ""
+
+#: templates/students/groups_delete.html:5
+msgid "deleting of group"
+msgstr ""
+
+#: templates/students/groups_one.html:7 templates/students/stud.html:10
+msgid "add student"
+msgstr ""
+
+#: templates/students/groups_one.html:25 templates/students/stud.html:29
+#: templates/students/students_add_edit.html:46
+msgid "last name"
+msgstr ""
+
+#: templates/students/groups_one.html:33
+#: templates/students/students_add_edit.html:33
+msgid "first name"
+msgstr ""
+
+#: templates/students/groups_one_null.html:5
+msgid "dont contains student"
+msgstr ""
+
+#: templates/students/grup.html:13
+msgid "add group"
+msgstr ""
+
+#: templates/students/journal.html:4 templates/students/journal.html.py:5
+msgid "Accounting Visits"
+msgstr ""
+
+#: templates/students/journal.html:9
+msgid "While no student in the database. Please first"
+msgstr ""
+
+#: templates/students/journal.html:10
+msgid "Add"
+msgstr ""
+
+#: templates/students/journal.html:14
+msgid "Changes to the log kept at a table click"
+msgstr ""
+
+#: templates/students/journal.html:15
+msgid "There preservation"
+msgstr ""
+
+#: templates/students/journal.html:19
+msgid "previous month"
+msgstr ""
+
+#: templates/students/journal.html:23
+msgid "next month"
+msgstr ""
+
+#: templates/students/journal.html:30
+msgid "student"
+msgstr ""
+
+#: templates/students/logs.html:5
+msgid "Events log"
+msgstr ""
+
+#: templates/students/logs.html:21
+msgid "level"
+msgstr ""
+
+#: templates/students/logs.html:26
+msgid "time"
+msgstr ""
+
+#: templates/students/logs.html:30
+msgid "details"
+msgstr ""
+
+#: templates/students/stud.html:8
+msgid "In the base"
+msgstr ""
+
+#: templates/students/stud.html:83
+msgid "students_delete"
+msgstr ""
+
+#: templates/students/students_add_edit.html:11
+msgid "editing of student"
+msgstr ""
+
+#: templates/students/students_add_edit.html:13
+msgid "adding of students"
+msgstr ""
+
+#: templates/students/students_add_edit.html:19
+msgid "please, correct next errors!"
+msgstr ""
+
+#: templates/students/students_add_edit.html:117
+#: templates/students/students_add_edit.html:126
+msgid "select group"
+msgstr ""
+
+#: templates/students/students_add_edit.html:136
+msgid "additional information"
+msgstr ""
+
+#: templates/students/students_delete.html:5
+msgid "deleting student"
+msgstr ""
+
+#: templates/students/students_delete.html:12
+msgid "Do you really want to delete group:"
+msgstr ""
+
+#: util.py:80
+msgid "ukrainian"
+msgstr ""
+
+#: view/contact_admin.py:32
+msgid "Send"
+msgstr ""
+
+#: view/contact_admin.py:35
+msgid "Your email"
+msgstr ""
+
+#: view/contact_admin.py:37
+msgid "Title of list"
+msgstr ""
+
+#: view/contact_admin.py:40
+msgid "Text of massage"
+msgstr ""
+
+#: view/contact_admin.py:59
+msgid "When you send a letter to an unexpected error occurred."
+msgstr ""
+
+#: view/contact_admin.py:63
+msgid "Massage succefuly sended!"
+msgstr ""
+
+#: view/exams.py:94
+msgid "Exam created sucefully"
+msgstr ""
+
+#: view/exams.py:97
+msgid "Creation of exam canceled"
+msgstr ""
+
+#: view/exams.py:144
+msgid "Exam sucefully edited!"
+msgstr ""
+
+#: view/exams.py:147
+msgid "Editing of exam canceled"
+msgstr ""
+
+#: view/exams.py:164
+msgid "Exam deleted sucefully"
+msgstr ""
+
+#: view/exams.py:167
+msgid "Deleting of exam canceled"
+msgstr ""
+
+#: view/group.py:54
+msgid "Name of group is mandatory."
+msgstr ""
+
+#: view/group.py:63
+msgid "Group added succefully"
+msgstr ""
+
+#: view/group.py:70
+msgid "adding group canceled"
+msgstr ""
+
+#: view/group.py:102
+msgid "Name is mandatory."
+msgstr ""
+
+#: view/group.py:108
+msgid "Name of leader is mandatory."
+msgstr ""
+
+#: view/group.py:114
+msgid "Editing of group canceled. Group hasnt student"
+msgstr ""
+
+#: view/group.py:122
+msgid "Group edited succefully"
+msgstr ""
+
+#: view/group.py:129
+msgid "Editing group canceled"
+msgstr ""
+
+#: view/group.py:149
+msgid "Group deleted succefully"
+msgstr ""
+
+#: view/group.py:153
+msgid "Deleting group canceled"
+msgstr ""
+
+#: view/student.py:65
+msgid "First Name field is required"
+msgstr ""
+
+#: view/student.py:70
+msgid "Last Name field is required"
+msgstr ""
+
+#: view/student.py:75
+msgid "Birthday field is required"
+msgstr ""
+
+#: view/student.py:80
+msgid "Enter the correct date format (eg 1986-03-23"
+msgstr ""
+
+#: view/student.py:85
+msgid "The number of ticket is required"
+msgstr ""
+
+#: view/student.py:90
+msgid "Select a group"
+msgstr ""
+
+#: view/student.py:94
+msgid "Select a correct group"
+msgstr ""
+
+#: view/student.py:100
+msgid "The file must be one of the following types : jpg, jpeg, png, gif"
+msgstr ""
+
+#: view/student.py:105
+msgid "The downloaded file is not an image file or corrupted"
+msgstr ""
+
+#: view/student.py:108
+msgid "Photo is too large (file size must be less than 2Mb)"
+msgstr ""
+
+#: view/student.py:117
+msgid "Students successfully added"
+msgstr ""
+
+#: view/student.py:124
+msgid "Adding the student canceled"
+msgstr ""
+
+#: view/student.py:151
+msgid "Name is mandatory"
+msgstr ""
+
+#: view/student.py:157
+msgid "Last name is required"
+msgstr ""
+
+#: view/student.py:163
+msgid "Date of birth is mandatory"
+msgstr ""
+
+#: view/student.py:168
+msgid "Enter the correct date format (eg. 12/30/1987)"
+msgstr ""
+
+#: view/student.py:175
+msgid "File too large"
+msgstr ""
+
+#: view/student.py:181
+msgid "Room ticket is a must"
+msgstr ""
+
+#: view/student.py:187
+msgid "Group is mandatory"
+msgstr ""
+
+#: view/student.py:191
+msgid "Select the correct group"
+msgstr ""
+
+#: view/student.py:195
+msgid "The student is the head of another group"
+msgstr ""
+
+#: view/student.py:203
+msgid "Edit the student has successfully completed"
+msgstr ""
+
+#: view/student.py:206
+msgid "Editing student canceled"
+msgstr ""
+
+#: view/student.py:230
+msgid "Students successfully removed"
+msgstr ""
+
+#: view/student.py:232
+msgid "Removal of the student canceled"
+msgstr ""

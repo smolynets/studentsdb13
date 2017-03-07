@@ -1,0 +1,49 @@
+{% extends "students/base.html" %}
+{% load i18n %}
+{% load static from staticfiles %}
+{% block meta_title %}{% trans "students" %}{% endblock meta_title %}
+{% block title %}Список  користувачів{% endblock title %}
+{% block content %}
+{% if user.is_authenticated %}
+
+<!-- Start Students Listing -->
+<table class="table">
+
+
+<thead>
+<tr>
+<th>
+#
+</th>
+<th>
+нікнейм
+</th>
+<th>
+прізвище
+</th>
+<th>
+id
+</th>
+<th>
+
+</th>
+</tr>
+</thead>
+
+
+<tbody>
+{% for use in users %}
+<tr>
+<td>{{ forloop.counter }}</td>
+<td><a href="{% url "prof_edit" use.id %}">{{ use.username }}</td>
+<td>{{ use.last_name }}</td>
+<td>{{ use.id }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+{% endif %}
+<!-- End Students Listing -->
+
+{% include "students/pagination.html" %}
+{% endblock content %}

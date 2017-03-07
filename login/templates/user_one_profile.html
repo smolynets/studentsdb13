@@ -1,0 +1,30 @@
+{% extends "students/base.html" %}
+{% load i18n %}
+{% block meta_title %}{{ user_one.get_full_name|default:user.username }}
+{% endblock meta_title %}
+{% block title %}
+{{ user_one.username }} {% endblock title %} 
+{% block content %}
+<table class="table table-striped">
+<tr>
+<td>{% trans "Email" %}:</td>
+<td>{{ user_one.email }}</td>
+</tr>
+<tr>
+<td>{% trans "Username" %}:</td>
+<td>{{ user_one.username }}</td>
+</tr>
+<tr>
+<td>{% trans "Joined" %}:</td>
+<td>{{ user_one.date_joined }}</td>
+</tr>
+<tr>
+<td>{% trans "name" %}:</td>
+<td>{{ user_one.first_name }}</td>
+</tr>
+<tr>
+<td>{% trans "surname" %}:</td>
+<td>{{ user_one.last_name }}</td>
+</tr>
+</table>
+{% endblock content %}

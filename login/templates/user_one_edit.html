@@ -1,0 +1,59 @@
+{% extends "students/base.html" %}
+{% load static from staticfiles %}
+{% load crispy_forms_tags %}
+{% block meta_title %}Студенти{% endblock meta_title %}
+{% block title %}Редагування користувача  {{student.first_name}} {{student.last_name}}{% endblock title %}
+{% block status_message %}
+{% if errors %}
+<div class="alert alert-warning" role="alert">
+Будь-ласка, виправте наступні помилки
+</div>
+{% endif %}
+{% endblock status_message %}
+{% block content %}
+<form enctype="multipart/form-data" class="form-horizontal" action="{% url "prof_edit" pk %}" method="post">
+    {% csrf_token %}
+    <div class="form-group{% if errors.username %} has-error{% endif %}">
+        <label for="" class="control-label col-sm-2">Імʼя користувача*</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="username" id="username" value="{{user.username}}">
+            <span class="help-block"> {{ errors.username }}</span>
+        </div>
+    </div>
+    <div class="form-group{% if errors.password %} has-error{% endif %}">
+        <label for="" class="control-label col-sm-2">Пароль*</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="password" id="password" value="{{user.password}}">
+            <span class="help-block"> {{ errors.password }}</span>
+        </div>
+        </div>
+        <div class="form-group{% if errors.email %} has-error{% endif %}">
+        <label for="" class="control-label col-sm-2">email*</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="email" id="email" value="{{user.email}}">
+            <span class="help-block"> {{ errors.email }}</span>
+        </div>
+        </div>
+
+        
+        <div class="form-group{% if errors.lang %} has-error{% endif %}">
+        <label for="" class="control-label col-sm-2">language*</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="lang" id="lang" value="{{user.stprofile.lang}}">
+            <span class="help-block"> {{ errors.email }}</span>
+        </div>
+        </div>
+
+        
+        
+    
+    <div class="form-group">
+        <label for="" class="control-label col-sm-2"></label>
+        <div class="col-sm-10">
+            <input class="btn btn-primary" type="submit" value="Зберегти" name="add_button"/>
+            <button class="btn btn-link" type="submit" name="cancel_button">Скасувати</button>
+        </div>
+    </div>
+</form>
+Поля, позначені  зірочкою,  обовязкові  для  заповнення!
+{% endblock content %}
